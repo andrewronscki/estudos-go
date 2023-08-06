@@ -2,28 +2,28 @@ package main
 
 import "fmt"
 
-type Usuario struct {
+type usuario struct {
 	nome  string
 	idade uint8
 }
 
-func (u Usuario) salvar() {
+func (u usuario) salvar() {
 	fmt.Printf("Salvando os dados do usuário '%s' no banco de dados\n", u.nome)
 }
 
-func (u Usuario) maiorDeIdade() bool {
+func (u usuario) maiorDeIdade() bool {
 	return u.idade >= 18
 }
 
-func (u *Usuario) fazerAniversario() {
+func (u *usuario) fazerAniversario() {
 	u.idade++
 }
 
 func main() {
-	usuario1 := Usuario{"Usuario 1", 20}
+	usuario1 := usuario{"Usuario 1", 20}
 	usuario1.salvar()
 
-	usuario2 := Usuario{"Usuario 2", 30}
+	usuario2 := usuario{"Usuario 2", 30}
 	usuario2.salvar()
 
 	maiorDeIdade := usuario2.maiorDeIdade()
