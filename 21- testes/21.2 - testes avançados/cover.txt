@@ -1,0 +1,5 @@
+mode: set
+formas-geometricas/main.go:17.35,19.2 1 1
+formas-geometricas/main.go:25.33,27.2 1 1
+formas-geometricas/main.go:29.28,31.2 1 0
+formas-geometricas/main.go:33.13,39.2 4 0
